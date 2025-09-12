@@ -62,7 +62,7 @@ langflow-ide:
   # https://github.com/langflow-ai/langflow/issues/4330#issuecomment-2459097917
   fullnameOverride: "langflow-service"
   ingress:
-    enabled: true
+    enabled: false
     annotations: {}
       # kubernetes.io/ingress.class: nginx
       # kubernetes.io/tls-acme: "true"
@@ -209,8 +209,9 @@ langflow-ide:
       enabled: true
       replicaCount: 1
       service:
-        type: ClusterIP
+        type: NodePort
         port: 8080
+        nodePort: 30808
       image:
         repository: langflowai/langflow-frontend
         imagePullPolicy: IfNotPresent
@@ -250,3 +251,4 @@ langflow-ide:
     enabled: false
 opensearch:
   enabled: true
+  replicaCount: 1
