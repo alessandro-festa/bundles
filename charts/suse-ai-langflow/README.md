@@ -33,11 +33,11 @@ This tutorial uses Chroma DB.
 
     The **Load Data Flow** should have **File**, **Split Text**, **Embedding Model**, vector store (such as **Chroma DB**), and **Chat Output** components:
 
-    ![File loader chat flow](https://github.com/langflow-ai/langflow/main/docs/static/img/tutorial-chatbot-embed-files.png)
+    ![File loader chat flow](https://raw.githubusercontent.com/langflow-ai/langflow/refs/heads/main/docs/static/img/tutorial-chatbot-embed-files.png)
 
     The **Retriever Flow** should have **Chat Input**, **Embedding Model**, vector store, **Parser**, **Prompt**, **Language Model**, and **Chat Output** components:
 
-    ![Chat with RAG flow](https://github.com/langflow-ai/langflow/main/docs/static/img/tutorial-chatbot-chat-flow.png)
+    ![Chat with RAG flow](https://raw.githubusercontent.com/langflow-ai/langflow/refs/heads/main/docs/static/img/tutorial-chatbot-chat-flow.png)
 
     The flows are ready to use.
     Continue the tutorial to learn how to use the loading flow to load data into your vector store, and then call the chat flow in a chatbot application.
