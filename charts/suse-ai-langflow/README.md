@@ -37,8 +37,10 @@ This tutorial uses Chroma DB.
 
     The **Retriever Flow** should have **Chat Input**, **Embedding Model**, vector store, **Parser**, **Prompt**, **Language Model**, and **Chat Output** components:
 
-    <img src="https://raw.githubusercontent.com/langflow-ai/langflow/refs/heads/main/docs/static/img/tutorial-chatbot-chat-flow.png" width="200" height="100">
-
+    <img src="https://raw.githubusercontent.com/langflow-ai/langflow/refs/heads/main/docs/static/img/tutorial-chatbot-chat-flow.png"
+         alt="LangFlow IDE flow" width="50%" height="50%">
+</figure>
+   
     The flows are ready to use.
     Continue the tutorial to learn how to use the loading flow to load data into your vector store, and then call the chat flow in a chatbot application.
 
