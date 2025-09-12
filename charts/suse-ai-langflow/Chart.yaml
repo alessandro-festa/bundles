@@ -9,7 +9,7 @@ annotations:
       name: langflow
 apiVersion: v2
 name: vector-rag-chatbot
-description: A pipeline test designed to evaluate and select a new framework for use on High-Performance Computing (HPC) environments.
+description: This tutorial demonstrates how you can use Langflow to create a chatbot application that uses Retrieval Augmented Generation (RAG) to embed your data as vectors in a vector database, and then chat with the data.
   - ai
 
 # A chart can be either an 'application' or a 'library' chart.
@@ -42,19 +42,9 @@ dependencies:
     version: 0.1.1
     repository: https://langflow-ai.github.io/langflow-helm-charts
     condition: langflow.enabled
-  # - name: qdrant
-  #   version: 1.15.4
-  #   condition: qdrant.enabled
-  # - name: open-webui
-  #   version: 6.13.0
-  #   repository: oci://dp.apps.rancher.io/charts
-  #   condition: open-webui.enabled
-  # - name: pytorch
-  #   version: 0.2.0
-  #   repository: oci://dp.apps.rancher.io/charts
-  #   condition: pytorch.enabled
-home: https://apps.rancher.io/applications/suse-ai-deployer
-icon: https://www.eni.com/content/dam/enicom/images/loghi/logoEni.svg
+
+home: https://www.suse.com/products/ai
+icon: https://apps.rancher.io/logos/suse-ai-deployer.png
 maintainers:
   - url: https://www.suse.com/
     name: SUSE LLC
