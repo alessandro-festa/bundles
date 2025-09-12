@@ -21,6 +21,7 @@ global:
 
 # Ollama subchart overrides - see the charts/ollama for additional entries
 ollama:
+  enabled: true
   ingress:
     enabled: false #Disabled - ollama endpoint is internal.
   persistentVolume:
