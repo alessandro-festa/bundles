@@ -248,3 +248,5 @@ langflow-ide:
 
   postgresql:
     enabled: false
+opensearch:
+  enabled: true

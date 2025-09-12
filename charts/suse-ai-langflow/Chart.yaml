@@ -42,6 +42,10 @@ dependencies:
     version: 0.1.1
     repository: https://langflow-ai.github.io/langflow-helm-charts
     condition: langflow.enabled
+  - name: opensearch
+    version: 3.2.1
+    repository: oci://dp.apps.rancher.io/charts
+    condition: opensearch.enabled
 
 home: https://www.suse.com/products/ai
 icon: https://apps.rancher.io/logos/suse-ai-deployer.png
