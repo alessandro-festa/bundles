@@ -33,12 +33,13 @@ This tutorial uses Chroma DB.
 
     The **Load Data Flow** should have **File**, **Split Text**, **Embedding Model**, vector store (such as **Chroma DB**), and **Chat Output** components:
 
-    ![File loader chat flow](https://raw.githubusercontent.com/langflow-ai/langflow/refs/heads/main/docs/static/img/tutorial-chatbot-embed-files.png)
+    <img src="https://raw.githubusercontent.com/langflow-ai/langflow/refs/heads/main/docs/static/img/tutorial-chatbot-embed-files.png"
+         alt="File loader chat flow" width="80%" height="80%">
 
     The **Retriever Flow** should have **Chat Input**, **Embedding Model**, vector store, **Parser**, **Prompt**, **Language Model**, and **Chat Output** components:
 
     <img src="https://raw.githubusercontent.com/langflow-ai/langflow/refs/heads/main/docs/static/img/tutorial-chatbot-chat-flow.png"
-         alt="LangFlow IDE flow" width="50%" height="50%">
+         alt="LangFlow IDE flow" width="80%" height="80%">
 </figure>
    
     The flows are ready to use.
