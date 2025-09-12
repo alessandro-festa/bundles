@@ -62,7 +62,7 @@ langflow-ide:
   # https://github.com/langflow-ai/langflow/issues/4330#issuecomment-2459097917
   fullnameOverride: "langflow-service"
   ingress:
-    enabled: false
+    enabled: true
     annotations: {}
       # kubernetes.io/ingress.class: nginx
       # kubernetes.io/tls-acme: "true"
