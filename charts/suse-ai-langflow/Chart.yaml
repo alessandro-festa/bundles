@@ -35,10 +35,10 @@ appVersion: "1.0.0"
 
 dependencies:
   - name: ollama
-    version: 1.16.0
+    version: 1.26.0
     repository: oci://dp.apps.rancher.io/charts
     condition: ollama.enabled
-  - name: langflow-stack
+  - name: langflow-ide
     version: 0.1.1
     repository: https://langflow-ai.github.io/langflow-helm-charts
     condition: langflow.enabled

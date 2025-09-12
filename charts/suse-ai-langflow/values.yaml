@@ -53,7 +53,7 @@ ollama:
       #
   runtimeClassName: ""
 
-langflow-stack:
+langflow-ide:
   enabled: true
   nameOverride: "langflow-service"
   # Override for the name of the helm deployment
