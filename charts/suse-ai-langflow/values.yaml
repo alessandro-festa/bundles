@@ -252,7 +252,7 @@ langflow-ide:
 opensearch:
   enabled: true
   replicaCount: 1
-  singleNode: false
+  singleNode: true
   extraEnvs:
     - name: OPENSEARCH_INITIAL_ADMIN_PASSWORD
       value: "MySecurePass123"
@@ -264,3 +264,4 @@ opensearch:
     limits:
       memory: "6Gi"
       cpu: "2"
+
