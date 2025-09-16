@@ -252,3 +252,6 @@ langflow-ide:
 opensearch:
   enabled: true
   replicaCount: 1
+  env:
+    - name: OPENSEARCH_INITIAL_ADMIN_PASSWORD
+      value: "YourVeryStrongPasswordHere!"
