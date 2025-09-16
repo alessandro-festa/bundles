@@ -1,0 +1,17 @@
+annotations:
+  helm.sh/images: |
+    - image: dp.apps.rancher.io/containers/opensearch:3.2.0-2.2
+      name: opensearch
+    - image: dp.apps.rancher.io/containers/bci-busybox:15.7-11.1
+      name: bci-busybox
+apiVersion: v2
+appVersion: 3.2.0
+description: OpenSearch is an open-source, enterprise-grade search and observability
+  suite that brings order to unstructured data at scale.
+home: https://apps.rancher.io/applications/opensearch
+icon: https://apps.rancher.io/logos/opensearch.png
+maintainers:
+- name: SUSE LLC
+  url: https://www.suse.com/
+name: opensearch
+version: 3.2.1

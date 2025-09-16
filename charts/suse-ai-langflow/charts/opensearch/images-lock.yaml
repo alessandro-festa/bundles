@@ -1,0 +1,26 @@
+apiVersion: v0
+kind: ImagesLock
+metadata:
+  generatedAt: "2025-09-08T15:34:42.092943Z"
+  generatedBy: SUSE LLC
+chart:
+  name: opensearch
+  version: 3.2.1
+  appVersion: 3.2.0
+images:
+  - name: bci-busybox
+    image: dp.apps.rancher.io/containers/bci-busybox:15.7-11.1
+    chart: opensearch
+    digests:
+      - digest: sha256:94eca044c289704134e809c429b17eca6184684d33625d201270633f1af733b0
+        arch: linux/amd64
+      - digest: sha256:5f1a992cf76cddb3eddd022fd40603fdf2de79dca1ed85bfadd4c6b362121414
+        arch: linux/arm64
+  - name: opensearch
+    image: dp.apps.rancher.io/containers/opensearch:3.2.0-2.2
+    chart: opensearch
+    digests:
+      - digest: sha256:183a5a5a8748012a4bccf05b46952327f46609630bdbab39e697c891f2bd850c
+        arch: linux/amd64
+      - digest: sha256:c41f34a0fda3e467c8b39ddcb572151e1b11446883e821d436659a20a6e87a3e
+        arch: linux/arm64
