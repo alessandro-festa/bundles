@@ -249,6 +249,11 @@ langflow-ide:
 
   postgresql:
     enabled: false
+
+  downloadFlows:
+    flows:
+    - url: https://raw.githubusercontent.com/datastax/langflow-charts/main/examples/flows/basic-prompting-hello-world.json
+      endpoint: hello-world
 opensearch:
   enabled: true
   replicaCount: 1
