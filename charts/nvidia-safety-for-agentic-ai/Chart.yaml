@@ -1,0 +1,54 @@
+# SPDX-License-Identifier: APACHE-2.0
+#!BuildTag: charts/suse-ai-deployer:1.0.0-%RELEASE%
+#!BuildTag: charts/suse-ai-deployer:1.0.0
+annotations:
+  helm.sh/images: |
+    - image: dp.apps.rancher.io/containers/ollama:0.11.4
+      name: ollama
+    - imgage: langflowai/langflow:latest
+      name: langflow
+apiVersion: v2
+name: vector-rag-chatbot
+description: This tutorial demonstrates how you can use Langflow to create a chatbot application that uses Retrieval Augmented Generation (RAG) to embed your data as vectors in a vector database, and then chat with the data.
+  - ai
+
+# A chart can be either an 'application' or a 'library' chart.
+#
+# Application charts are a collection of templates that can be packaged into versioned archives
+# to be deployed.
+#
+# Library charts provide useful utilities or functions for the chart developer. They're included as
+# a dependency of application charts to inject those utilities and functions into the rendering
+# pipeline. Library charts do not define any templates and therefore cannot be deployed.
+type: application
+
+# This is the chart version. This version number should be incremented each time you make changes
+# to the chart and its templates, including the app version.
+# Versions are expected to follow Semantic Versioning (https://semver.org/)
+version: 1.0.0
+
+# This is the version number of the application being deployed. This version number should be
+# incremented each time you make changes to the application. Versions are not expected to
+# follow Semantic Versioning. They should reflect the version the application is using.
+# It is recommended to use it with quotes.
+appVersion: "1.0.0"
+
+dependencies:
+  - name: ollama
+    version: 1.26.0
+    repository: oci://dp.apps.rancher.io/charts
+    condition: ollama.enabled
+  - name: langflow-ide
+    version: 0.1.1
+    repository: https://langflow-ai.github.io/langflow-helm-charts
+    condition: langflow.enabled
+  - name: opensearch
+    version: 3.2.1
+    repository: oci://dp.apps.rancher.io/charts
+    condition: opensearch.enabled
+
+home: https://www.suse.com/products/ai
+icon: https://apps.rancher.io/logos/suse-ai-deployer.png
+maintainers:
+  - url: https://www.suse.com/
+    name: SUSE LLC
