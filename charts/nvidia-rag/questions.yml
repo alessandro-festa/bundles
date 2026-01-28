@@ -1,0 +1,5 @@
+- variable: api
+  label: "NVIDIA AI Enterprise Api Key"
+  description: "NVAIE Api"
+  type: string
+  default: "nv_1234..."
