@@ -8,8 +8,8 @@ annotations:
     - imgage: langflowai/langflow:latest
       name: langflow
 apiVersion: v2
-name: vector-rag-chatbot
-description: This tutorial demonstrates how you can use Langflow to create a chatbot application that uses Retrieval Augmented Generation (RAG) to embed your data as vectors in a vector database, and then chat with the data.
+name: safety-for-agentic-ai
+description: With this safety recipe, enterprises can now confidently adopt open models, aligned to their policy. Start with model evaluation using garak vulnerability scanning with curated risk prompts, benchmarking against enterprise thresholds. 
   - ai
 
 # A chart can be either an 'application' or a 'library' chart.
@@ -48,7 +48,7 @@ dependencies:
     condition: opensearch.enabled
 
 home: https://www.suse.com/products/ai
-icon: https://apps.rancher.io/logos/suse-ai-deployer.png
+icon: https://avatars.githubusercontent.com/u/1728152
 maintainers:
   - url: https://www.suse.com/
     name: SUSE LLC

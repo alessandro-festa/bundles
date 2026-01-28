@@ -48,7 +48,7 @@ dependencies:
     condition: opensearch.enabled
 
 home: https://www.suse.com/products/ai
-icon: https://apps.rancher.io/logos/suse-ai-deployer.png
+icon: https://avatars.githubusercontent.com/u/1728152
 maintainers:
   - url: https://www.suse.com/
     name: SUSE LLC
